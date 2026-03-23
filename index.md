@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Privacy Policy - Header Hub
+theme: jekyll-theme-cayman
 ---
 # Privacy Policy for Header Hub
 
