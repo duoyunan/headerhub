@@ -1,3 +1,7 @@
+---
+layout: default
+title: Privacy Policy - Header Hub
+---
 # Privacy Policy for Header Hub
 
 **Last Updated: 2026-03-23**
