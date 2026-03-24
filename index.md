@@ -19,7 +19,7 @@ We believe your data belongs to you.
 - **Git Synchronization (Optional):** If you enable the team sync feature, your configuration data is transmitted directly between the extension and your chosen Git provider (e.g., Gitea, GitLab or Github). We highly recommend using **on-premise Gitea or GitLab** instances hosted by your own team. This ensures the **highest level of data sovereignty** and privacy, as your configuration remains entirely within your private network.
 
 ## 4. Third-Party Services
-- **Gumroad:** We use Gumroad for license management. When you purchase a license, Gumroad's privacy policy applies to the transaction. Header Hub only verifies the license key via Gumroad's API.
+- **Gumroad:** We use Gumroad for license management and payment processing. The payment process occurs entirely on Gumroad’s secure platform in a separate browser tab. Header Hub only stores and verifies the license key locally to unlock Pro features.
 - **Git Providers:** When you use the team sync feature, the privacy policy of your chosen Git provider (e.g., GitHub) applies.
 
 ## 5. Security
@@ -32,11 +32,15 @@ Header Hub requests the following permissions only to provide its core functiona
 - **`declarativeNetRequest`**: Required to perform high-performance HTTP header modifications (add, set, or remove headers) based on your custom rules.
 - **`declarativeNetRequestWithHostAccess`**: Required to modify headers on specific domains that you define. This ensures the extension can apply your rules to the network requests of the websites you choose to manage.
 - **`cookies`**: Required to read or modify cookies within the HTTP headers when your rules specifically target cookie-related headers. This is essential for developers debugging session-related or authentication-related header issues.
+- **`host_permissions (http:/// and https:///)`**: Required to allow the extension to apply your custom rules across various development, staging, or production environments. This is essential because debugging tasks can occur on any domain defined by the user.
 
 **Note:** All operations performed using these permissions happen locally within your browser. No data accessed through these permissions is ever transmitted to our servers.
 
-## 7. Changes to This Policy
+## 7. Data Non-Disclosure and Non-Monetization
+We do not sell, trade, or otherwise transfer your data to third parties. Your header configurations, cookies, and browsing activity are never used for advertising, tracking, or any other commercial purposes beyond the core functionality of the Extension.
+
+## 8. Changes to This Policy
 We may update this Privacy Policy from time to time. Any changes will be reflected by the "Last Updated" date at the top.
 
-## 8. Contact Us
+## 9. Contact Us
 If you have any questions about this Privacy Policy, please contact us at: **duoyunan@163.com**
